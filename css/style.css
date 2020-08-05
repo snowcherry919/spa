@@ -1,0 +1,401 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ---------------------------------- */
+
+
+/* 全域border-box */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+/* 字體大小字型 */
+
+.font-20 {
+    font: Italic 20px/42px Roboto;
+}
+
+.font-24 {
+    font: Italic 24px/42px Roboto;
+}
+
+.font-24_42 {
+    font: Italic 24px/42px Roboto;
+}
+
+.font-64 {
+    font: Italic 64px/75px Roboto;
+}
+
+.font-b {
+    font-weight: bold;
+}
+
+
+/* 字體顏色 */
+
+.text-white {
+    color: #fff;
+}
+
+
+/* 背景色 */
+
+.bg-black {
+    background: #000;
+}
+
+
+/* 邊界定義 */
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.px-13 {
+    padding: 0 13px;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+
+.pb-160 {
+    padding-bottom: 160px;
+}
+
+
+/* profile */
+
+
+/* 背景圖 */
+
+.container__bg {
+    background-image: url(../img/photo-1552393700-42696fb89bfa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    margin-bottom: 256px;
+    margin-top: 356px;
+}
+
+.profile__title {
+    font: Bold Italic 80px/94px Roboto;
+}
+
+.profile__icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* about */
+
+.about {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__item {
+    width: 450px;
+    text-align: center;
+}
+
+.about__li {
+    margin-bottom: 8px;
+}
+
+.about__li--active {
+    margin-bottom: 12px;
+}
+
+.about__item--border {
+    width: 384px;
+    border-top: 1px solid #000;
+    padding: 32px 0 56px 0;
+}
+
+.about__list {
+    position: relative;
+}
+
+.about__list:before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #891818;
+    top: 10px;
+    left: 0;
+}
+
+.about__list:nth-child(2):before {
+    left: 60px;
+}
+
+
+/* brand */
+
+.brand__title,
+.brand__subtitle,
+.brand__des {
+    text-align: center;
+}
+
+.brand__title,
+.footer__title,
+.footer__link {
+    margin-bottom: 16px;
+}
+
+.brand__des {
+    margin-bottom: 48px;
+    font: 20px/42px Roboto;
+}
+
+.brand__des span {
+    font: Italic 20px/42px Roboto;
+}
+
+.brand__pic {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* work */
+
+.work__pic {
+    background-image: url(../img/photo-1561291386-5be50364cfb5.png);
+    /* padding-bottom: 102px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+figcaption {
+    font: 20px/42px Roboto;
+    color: #fff;
+    margin-top: 16px;
+    margin-bottom: 56px;
+}
+
+.work {
+    text-align: center;
+}
+
+.work__des {
+    margin-bottom: 128px;
+    font: 20px/42px Roboto;
+}
+
+.work__des span,
+.work__pic span {
+    font: Italic 20px/42px Roboto;
+}
+
+.work__pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work__pic img {
+    margin-right: 24px;
+}
+
+.work__pic figure {
+    transform: translateY(-80px);
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+.footer__link {
+    display: block;
+    text-decoration: none;
+}
